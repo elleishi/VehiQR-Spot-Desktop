@@ -1,0 +1,200 @@
+/* Main  */  
+.main-container {
+    grid-area: main;
+    overflow-y: auto;
+    padding: 20px 20px;
+    height: 100%; 
+    min-height: 100vh;
+    display: grid;
+  }
+  
+  .main-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+  }
+
+  
+.fcard {
+    padding: 15px 15px;
+    border-radius: 5px;
+    width: 350px; /* Fixed card width */
+    height: 170px; /* Keeps the card height flexible */
+    box-shadow: 0 6px 10px -3px rgba(35, 152, 31, 0.269);
+    background-color: rgba(253, 252, 252, 0.95); /* Background color of the card */
+  }
+
+  
+.s-inner {
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-between; 
+  height: 100%;
+  position: relative; 
+  padding: 20px;
+}
+
+
+.icon-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px; 
+    height: 40px; 
+    border-radius: 50%;
+    background-color: #66894c;
+    position: absolute; 
+    top: 10px; 
+    right: 10px; 
+  }
+  
+  .card_icon {
+    font-size: 18px;
+    color: rgba(36, 62, 36, 0.659);
+  }
+
+.s-inner > h1 {
+    margin-top: 50px;
+    color: #464b42; 
+    font-size: 30px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  .s-inner > h4 {
+    margin-bottom: 20px;
+    color: #464b42; 
+    font-size: 13px; 
+    font-weight: 500;
+  }
+
+  .charts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: -1%;
+    width: 100%;
+  }
+
+  .d-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border-radius: 5px;
+    width: 100%; /* Ensures full width of its parent */
+    max-width: 600px; 
+    height: 300px; /* Adjust based on your layout needs */
+    box-shadow: 0 6px 10px -3px rgba(35, 152, 31, 0.269);
+    background-color: rgba(253, 252, 252, 0.95); /* Background color of the card */
+   margin: 0 auto; 
+  }
+
+.d-label{
+    margin: 20px 30px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #464b42;
+    margin-bottom: 10px;
+}
+
+
+.b-card {
+    display: flex;
+    flex-direction: column; /* Flex layout for alignment */
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border-radius: 5px;
+    width: 100%; /* Ensures full width of its parent */
+    max-width: 600px; /* Optional: to prevent it from getting too wide */
+    height:300px; /* Adjust based on your layout needs */
+    box-shadow: 0 6px 10px -3px rgba(35, 152, 31, 0.269);
+    background-color: rgba(253, 252, 252, 0.95); /* Background color of the card */
+    margin: 0 auto; /* Centers the container horizontally */
+  }
+  
+  .b-label{
+    font-size: 14px;
+    font-weight: 700;
+    color: #464b42;
+    margin-bottom: 20px;
+}
+
+
+/* Tablet and smaller screen sizes */
+@media screen and (max-width: 1000px) {
+  .main-cards {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+  
+  .charts {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Mobile and smaller screens (600px and below) */
+@media screen and (max-width: 800px) {
+  .main-container {
+    grid-area: main;
+    overflow: auto;
+    max-height: 100vh;
+  }
+
+  .main-cards {
+    display: grid;
+    grid-template-columns: 1fr; /* Cards stack in a single column */
+    gap: 20px;
+
+
+  }
+
+  .fcard {
+    width: 100%; /* Ensure cards take full width on mobile */
+    max-width: 100%; /* Remove max-width for flexibility */
+  }
+
+  .charts {
+    display: grid;
+    grid-template-columns: 1fr; /* Stacks charts in one column */
+    gap: 20px;
+  }
+
+  .d-card, .b-card {
+    width: 100%; /* Ensure cards take full width on mobile */
+    max-width: none; /* Remove max-width for flexibility */
+    height: auto; /* Adjust height for mobile */
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .main-container {
+  overflow-y: scroll; 
+  max-height: 100vh;
+  }
+
+  .main-cards {
+
+  grid-template-columns: 2fr; /* Cards stack in a single column */
+  gap: 20px;
+  display: grid;
+  height: 100vh;
+  }
+
+  .fcard {
+    max-width: 100%; 
+  }
+
+  .charts {
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 20px;
+    width: 50%;
+  }
+
+  .d-card, .b-card {
+    width: 100%;
+    max-width: none; 
+    height: auto; 
+  }
+}

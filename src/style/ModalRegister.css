@@ -1,0 +1,239 @@
+.container {
+    display: flex;                 
+    flex-direction: column;       
+    width: 100%;                  
+    margin: auto;
+    padding: 30px 30px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    max-height: 100vh;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    z-index: 1000; /* Ensure it's above other content */
+  }
+  
+  .modal-overlay-edit {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    z-index: 1000; /* Ensure it's above other content */
+  }
+
+  .modal-content-edit {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    position: relative;
+  }
+  
+  
+  input [type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 12px;
+  }
+  
+.reg-con {
+    width: 100%;                
+    display: flex;              
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;  
+    margin: 4px 0;   
+}
+
+.reg-input{
+    width: 48%; /* Adjusted to allow some margin space */
+    margin: 0px 3px; /* Margin above and below */
+    border-radius: 5px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.reg-con-role {
+    width: 100%;                
+    display: flex;              
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;  
+    margin: 0px 0;   
+}
+
+.reg-input-role{
+    width: 99%; /* Adjusted to allow some margin space */
+    margin: 3px 0; /* Margin above and below */
+    border-radius: 5px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+h3,
+h4{
+    color: #4f653e;
+}
+
+h4{
+    margin: 15px 0;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="plate"],
+select {         /* Allow inputs and selects to grow */
+    padding: 15px;
+    margin: 1px 0;              /* Margin above and below */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+input[type="address"] {
+    width: 100%;          /* Allow inputs and selects to grow */
+    padding: 15px;
+    margin: 1px 0;              /* Margin above and below */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+
+
+.pass-role {
+    flex-direction: row;
+    display: flex;
+    align-items: center;   
+    width: 100%;
+    justify-content: space-between; /* This will ensure space between elements */
+} 
+
+
+.role-style{
+    width: 50%; /* Adjusted to allow some margin space */
+    margin: 5px 0; /* Margin above and below */
+    border-radius: 5px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.pass{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+select{
+    width: 98%;  
+    height: 42px;        /* Allow inputs and selects to grow */
+    padding: 0px 10px;
+    margin: 0px 0;              /* Margin above and below */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 12px;
+    color: #5e5e5e;
+}
+
+
+.generatePass-btn {
+    font-size: 10px;              
+    height: 40px;                 
+    width: 80px;                  
+    position: absolute;           
+    right: 5px; 
+    top: 50%;                     
+    transform: translateY(-50%); 
+    border: none;                 
+    border-radius: 5px;          
+    background-color: #66894c;   
+    color: #ffffff;               
+    cursor: pointer;          
+    z-index: 1000;    
+}
+
+.generatePass-btn:hover{
+    background-color: #4f653e;
+    color: #fff;
+}
+
+hr{
+    width: 100%;
+    margin: 35px 0;
+    border: 1px solid #ccc;
+}
+
+.vehicle-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+input[type="plate"]{
+    width: 100%;          /* Allow inputs and selects to grow */
+    padding: 15px;
+    margin: 0px 0;              /* Margin above and below */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.reg-button{
+    justify-content: space-between;
+    display: flex;
+    margin: 10px 0 0 0;
+}
+
+.btn-reg{
+    background-color: #66894c;
+    border: none;            
+    border-radius: 5px;
+    padding: 10px 10px;
+    width: 100px;      
+    color: #ffffff;
+    cursor: pointer;          
+    font-size: 10px;   
+    text-align: center;
+
+}
+
+.btn-reg:hover{
+    background-color: #4f653e;
+    color: #fff;
+}

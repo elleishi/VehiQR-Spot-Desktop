@@ -1,0 +1,126 @@
+/* Header  */
+.header {
+    grid-area: header;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px 0 30px;
+    box-shadow: 0 6px 7px -3px rgba(217, 217, 217, 0.35);
+  }
+/* End Header  */
+  
+  
+  .vehiqrlogo {
+    width: 250px; /* Adjust size */
+    height: auto;
+    margin-top: -90px;
+    margin-bottom: -120px;
+    margin-left: -25px;
+    margin-right: -20px;
+  }
+  
+#sidebar {
+    grid-area: sidebar;
+    background-color: #314026;
+    overflow-y: auto;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    height: 100%; 
+    min-height: 100vh; 
+  }
+  
+  
+  .sidebar-title {
+    display: flex;
+    align-items: center;
+    padding: 20px 0px 0px 25px;
+    margin-bottom: 60px;
+  }
+  
+  .sidebar-title > span {
+    display: none;
+  }
+  
+  .sidebar-brand {
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  
+  .sidebar-list {
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  .s-list-item {
+    padding: 15px;
+    font-size: 18px;
+    color: #f8f8fc;
+    font-size:14px;
+    margin: 0px 20px 7px 20px;
+    border-radius: 5px;
+}
+
+  
+  .s-list-item:hover {
+    background-color: rgba(39, 55, 39, 0.925);
+    cursor: pointer;
+  }
+  
+  .s-list-item > a {
+    text-decoration: none;
+    color: #f8f8fc;
+    font-size: 14px;
+  }
+
+  .s-list-item .icon {
+  vertical-align: middle;
+  line-height: 1px;
+  font-size: 20px;
+  margin-right: 10px;
+  color: #66894c;
+}
+
+/* Style for nested list */
+.nested-list {
+  list-style-type: none;
+  padding-left: 25px; /* Adjust indentation */
+  margin: 0;
+}
+
+.nested-item {
+  padding: 15px 20px;
+  border-radius: 5px;
+  color: #e0e0e0; /* Matches sidebar text color */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nested-item a {
+  text-decoration: none;
+  color: inherit; /* Inherit the color from the parent */
+}
+
+.nested-item:hover {
+  background-color: #3b3b3b; /* Darker shade for hover effect */
+  color: #ffffff;
+}
+
+.nested-item a:hover {
+  color: #ffffff;
+}
+
+
+  
+  .sidebar-responsive {
+    display: inline !important;
+    position: absolute;
+      /*
+    we want the z-index of the sidebar higher so that
+    the charts are not showing over the sidebar 
+    on small screens
+  */
+  z-index: 12 !important;
+}
+
+

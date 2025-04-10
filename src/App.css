@@ -1,0 +1,51 @@
+.body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f4ed;
+}
+
+.Toastify__close-button {
+  padding: 0 !important;      
+  margin: 0 !important;       
+  background: none !important;
+  color: inherit !important;  
+  border: none !important;    
+  width: 20px !important;     
+  height: 20px !important;    
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swal-center-button {
+  display: block !important;      
+  margin: 0 auto !important;      
+}
+
+
+.swal2-confirm {
+  background-color: #66894c; /* Green background for button */
+  color: white; /* White text for button */
+}
+
+.grid-container-home{
+  display: grid;
+  grid-template-columns: 250px 1fr 1fr 1fr;
+  grid-template-areas:
+    'sidebar header header header'
+    'sidebar main main main';
+  height: 100vh;
+}
+
+
+@media (max-width: 600px) {
+  .main-content {
+
+    grid-area: main;
+    margin-left: 20px; /* Adjust main content when sidebar is hidden */
+    width: 100%;
+  }
+
+  
+}
